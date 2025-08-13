@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './tasks.component.css',
 })
 export class TasksComponent {
-  @Input({ required: true }) name!: string;
+  @Input() name?: string; //The ? is telling TS that we understand name might be given an udefined value and not a string
 }
