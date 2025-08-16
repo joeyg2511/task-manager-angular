@@ -1,12 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-interface Task {
-  id: string,
-  userId: string,
-  summary: string,
-  title: string,
-  dueDate: string
-}
+import { type Task } from './task.model';
 
 @Component({
   selector: 'app-task',
